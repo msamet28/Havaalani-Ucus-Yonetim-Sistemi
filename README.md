@@ -26,8 +26,7 @@ TR| C dili ile yazılan bu projenin amacı öncelikli kuyruk kullanarak bir hava
 * Kuleden bir günde maksimum 24 uçak iniş için izin talep edebilir. Eğer bu kapasite dolmuşsa;
                   o İniş için onay alan uçaklardan en az birinin önceliği (X uçağı olsun), iniş izni onayı bekleyen uçağın (Y uçağı olsun) önceliğinden düşükse; yüksek öncelikli yeni                       uçağa (Y) iniş onayı verilir. Daha önce onay almış ve önceliği düşük olan uçak (X) başka bir havalimanına yönlendirilmelidir.                                                           o İniş izni daha önceden onaylanan uçağın (X) izni iptal edilmişse; “Acil iniş yapması gereken …(Y) uçağı nedeniyle iniş izniniz iptal edilmiştir, iniş için Sabiha                         Gökçen Havalimanı’na yönlendiriliyorsunuz.” şeklinde ekranda yazdırılmalıdır.
                   
-           
-                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                              
 EN| The goal of this project written in C language is to create an airport flight management system using a priority queue. The rules of the Flight Management System are as follows;
 
 At Istanbul Airport, which has 2 runways, only 1 aircraft can take off and only 1 aircraft can land at the same time during the day, while each aircraft at the airport has different priorities in landing and takeoff, and can request permission for a maximum of 24 landings in one day. Using the information about the priority order of the aircraft at the airport, landing time, delay time, and takeoff time, the aim is to determine the order of use of the landing and takeoff runways.
