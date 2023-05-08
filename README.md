@@ -24,7 +24,8 @@ TR| C dili ile yazılan bu projenin amacı öncelikli kuyruk kullanarak bir hava
 * Önceliği yüksek olan uçaklar nedeniyle önceliği düşük olan herhangi bir uçağın uçuşu, maksimum 3 kez ertelenebilir. Eğer 3’ten fazla ertelenme durumu söz konusuysa, öncelik gözetilmeksizin beklemede olan uçağın kalkışı gerçekleştirilmelidir.
  
 * Kuleden bir günde maksimum 24 uçak iniş için izin talep edebilir. Eğer bu kapasite dolmuşsa;
-                  o İniş için onay alan uçaklardan en az birinin önceliği (X uçağı olsun), iniş izni onayı bekleyen uçağın (Y uçağı olsun) önceliğinden düşükse; yüksek öncelikli yeni                       uçağa (Y) iniş onayı verilir. Daha önce onay almış ve önceliği düşük olan uçak (X) başka bir havalimanına yönlendirilmelidir.                                                           o İniş izni daha önceden onaylanan uçağın (X) izni iptal edilmişse; “Acil iniş yapması gereken …(Y) uçağı nedeniyle iniş izniniz iptal edilmiştir, iniş için Sabiha                         Gökçen Havalimanı’na yönlendiriliyorsunuz.” şeklinde ekranda yazdırılmalıdır.
+                  * İniş için onay alan uçaklardan en az birinin önceliği (X uçağı olsun), iniş izni onayı bekleyen uçağın (Y uçağı olsun) önceliğinden düşükse; yüksek öncelikli yeni                       uçağa (Y) iniş onayı verilir. Daha önce onay almış ve önceliği düşük olan uçak (X) başka bir havalimanına yönlendirilmelidir.
+                  * İniş izni daha önceden onaylanan uçağın (X) izni iptal edilmişse; “Acil iniş yapması gereken …(Y) uçağı nedeniyle iniş izniniz iptal edilmiştir, iniş için Sabiha                         Gökçen Havalimanı’na yönlendiriliyorsunuz.” şeklinde ekranda yazdırılmalıdır.
                   
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                              
 EN| The goal of this project written in C language is to create an airport flight management system using a priority queue. The rules of the Flight Management System are as follows;
@@ -54,11 +55,7 @@ At Istanbul Airport, which has 2 runways, only 1 aircraft can take off and only 
 * If the flight of any aircraft with a low priority is delayed more than 3 times due to high-priority aircraft, the flight of the waiting aircraft should be performed regardless of priority.
 
 * The control tower can request permission for a maximum of 24 landings in one day. If this capacity is exceeded;
-                o If the priority of the aircraft (X) that received permission for landing is lower than the priority of the aircraft (Y) waiting for landing permission, the high-                         priority new aircraft (Y) is given landing permission. The aircraft (X) that has already received permission and has a lower priority should be directed to another                       airport.
-                o If the permission of the aircraft (X) whose landing permission was previously approved is canceled; "Your landing permission has been canceled due to the emergency                       landing of the ... (Y) plane. You should land at Sabiha Gokcen Airport ..." should be displayed on the screen.                  
+                * If the priority of the aircraft (X) that received permission for landing is lower than the priority of the aircraft (Y) waiting for landing permission, the high-                         priority new aircraft (Y) is given landing permission. The aircraft (X) that has already received permission and has a lower priority should be directed to another                       airport.
+                * If the permission of the aircraft (X) whose landing permission was previously approved is canceled; "Your landing permission has been canceled due to the emergency                       landing of the ... (Y) plane. You should land at Sabiha Gokcen Airport ..." should be displayed on the screen.                  
                   
                   
-                  
-
-
-
